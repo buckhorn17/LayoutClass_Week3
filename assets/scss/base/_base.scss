@@ -1,0 +1,19 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body{
+    font-family: "SF Pro Text", "Segoe UI", "Microsoft JhengHei";
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
