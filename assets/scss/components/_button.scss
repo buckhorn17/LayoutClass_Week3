@@ -1,0 +1,19 @@
+.btn-red {
+    color: white;
+    background: $color-redA;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+
+    &:hover {
+        background: $color-redB;
+    }
+}
+
+.btn-index-submit{
+    padding: 16px 176px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

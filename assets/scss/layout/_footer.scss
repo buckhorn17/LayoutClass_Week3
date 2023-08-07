@@ -1,4 +1,48 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  background: $color-redA;
+  color: white;
+
+  a {
+    color: white;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
+
+  .footer-over {
+    padding: 48px 0px 32px;
+    border-bottom: 1px solid white;
+
+    .menu {
+      gap: 48px;
+    }
+
+    .footer-over-icon {
+      gap: 32px;
+
+      img {
+        width: 48px;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .footer-under {
+    padding: 32px 0;
+
+    .footer-under-terms {
+      gap: 48px;
+    }
+  }
+
 }

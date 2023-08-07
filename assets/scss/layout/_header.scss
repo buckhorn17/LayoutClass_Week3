@@ -1,7 +1,35 @@
-.header{
-  background: $color-red01;
-  font-size: 20px;
-  a{
-    color: $color-white;
+header {
+  background: $color-redA;
+
+  .logo {
+    width: 80px;
+  }
+
+  .menu {
+    a {
+      display: inline-block;
+      padding: 25px 32px 19px;
+      color: white;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        margin-top: 4px;
+        margin-left: auto;
+        background: white;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      &:hover {
+        &::after {
+          content: '';
+          width: 100%;
+        }
+      }
+    }
   }
 }
