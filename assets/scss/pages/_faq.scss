@@ -1,0 +1,27 @@
+.faq {
+    padding: 96px 15px 80px;
+}
+
+@media (max-width:768px) {
+    .faq {
+        padding: 80px 36px;
+    }
+}
+
+@media (max-width:375px) {
+    .faq {
+        padding: 40px 13px;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -21,6 +21,10 @@ footer {
       gap: 48px;
     }
 
+    .contact {
+      padding: 0 6px;
+    }
+
     .footer-over-icon {
       gap: 32px;
 
@@ -42,6 +46,85 @@ footer {
 
     .footer-under-terms {
       gap: 48px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  footer {
+    .footer-over {
+      .menu {
+        margin-bottom: 32px;
+      }
+
+      .footer-over-icon {
+        gap: 16px;
+      }
+    }
+
+    .footer-under {
+      padding: 40px 0;
+    }
+  }
+
+}
+
+
+@media (max-width:700px) {
+
+  footer {
+    .footer-over {
+      padding: 24px 0;
+
+      .menu {
+        display: none;
+      }
+
+      .contact {
+        padding: 0 6px;
+        font-size: 16px;
+
+        span {
+          margin-right: 11px;
+          font-size: 16px;
+        }
+
+      }
+
+      .footer-over-icon {
+        gap: 8px;
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+
+    .footer-under {
+      flex-wrap: wrap;
+      padding: 16px 0 24px;
+
+      .footer-under-copyright {
+        margin-bottom: 8px;
+      }
+
+      .footer-under-terms {
+        flex-wrap: wrap;
+        gap: 8px;
+
+        li {
+          width: 100%;
+        }
+      }
     }
   }
 

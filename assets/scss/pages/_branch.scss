@@ -1,0 +1,98 @@
+.branch {
+    padding: 96px 15px 80px;
+
+    .branch-location {
+        width: 32%;
+    }
+
+    .branch-cards {
+        display: flex;
+        gap: 48px 2%;
+
+        .card {
+            width: 32%;
+            height: 100%;
+            border: 1px solid #00000020;
+            color: #212529;
+
+            h3 {
+                padding: 8px 24px;
+                border-bottom: 1px solid #00000020;
+            }
+        }
+    }
+
+    .card-content {
+        padding: 16px 24px;
+        width: 100%;
+
+        a {
+            color: #212529;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+
+            &:hover {
+                color: $color-grey;
+            }
+        }
+
+        p {
+            display: flex;
+        }
+
+        span {
+            transform: translateY(4px);
+        }
+    }
+
+
+}
+
+
+@media (max-width:768px) {
+    .branch {
+        padding: 80px 15px;
+
+        .branch-location {
+            width: 60%;
+        }
+
+        .branch-cards {
+            gap: 24px 2%;
+            justify-content: space-between;
+
+            .card {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .branch {
+        padding: 40px 13px;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        .branch-location {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .branch-cards {
+            gap: 24px;
+
+            .card {
+                width: 100%;
+
+                .ft-p2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}

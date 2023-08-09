@@ -1,28 +1,28 @@
-.ft-h1 { //64
+.ft-h1 {
     font-size: $font-h1;
 }
 
-.ft-h2 { //48
+.ft-h2 {
     font-size: $font-h2;
 }
 
-.ft-h3 { //36
+.ft-h3 {
     font-size: $font-huge;
 }
 
-.ft-p1 { //24
+.ft-p1 {
     font-size: $font-large ;
 }
 
-.ft-p2 { //20
+.ft-p2 {
     font-size: $font-medium;
 }
 
-.ft-p3 { //16
+.ft-p3 {
     font-size: $font-small ;
 }
 
-.ft-p4 { //14
+.ft-p4 {
     font-size: $font-tiny ;
 }
 
@@ -70,11 +70,11 @@
     font-style: italic;
 }
 
-.ta-ct{
+.ta-ct {
     text-align: center;
 }
 
-.va-md{
+.va-md {
     vertical-align: middle;
 }
 
@@ -102,7 +102,7 @@
     background: #FBF2F2;
 }
 
-.mouse-pt{
+.mouse-pt {
     cursor: pointer;
 }
 
@@ -116,7 +116,7 @@
     justify-content: space-around;
 }
 
-.flex-ai-center{
+.flex-ai-center {
     align-items: center;
 }
 
@@ -144,8 +144,16 @@
     margin-bottom: 32px;
 }
 
+.mb33 {
+    margin-bottom: 33px;
+}
+
 .mb36 {
     margin-bottom: 36px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
 }
 
 .mb48 {
@@ -156,10 +164,14 @@
     margin-bottom: 80px;
 }
 
-.mr20{
+.mr8 {
+    margin-right: 8px;
+}
+
+.mr20 {
     margin-right: 20px;
 }
 
-.mt48{
+.mt48 {
     margin-top: 48px;
 }

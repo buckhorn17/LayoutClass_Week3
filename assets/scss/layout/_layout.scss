@@ -1,4 +1,22 @@
-.container{
-    max-width: 1296px;
+.container {
+    max-width: 1311px;
+    padding: 0 15px;
     margin: 0 auto;
+}
+
+.h2-style-line {
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 0 36px;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        padding: 0 14px;
+    }
 }
