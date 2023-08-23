@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />        <title>Glasses - 門市據點</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />        <title>Glasses - 門市據點</title>
   <script type="module" crossorigin src="/LayoutClass_Week3/assets/main-4fec4c29.js"></script>
   <link rel="stylesheet" href="/LayoutClass_Week3/assets/main-693a8cc2.css">
 </head>
@@ -27,8 +29,8 @@
 </div>
 </header>
         <div class="branch container">
-            <h2 class="ft-h2 ft-wb h2-style-line mb33">門市據點</h2>
-            <div class="branch-location flex-sb mb40">
+            <h2 class="ft-h2 ft-wb h2-style-line mb33" data-aos="fade-right">門市據點</h2>
+            <div class="branch-location flex-sb mb40" data-aos="fade-right">
                 <p class="ft-p1">選擇地區</p>
                 <select id="myLocation" class="select-branch-option">
                     <option value="">台北市</option>
@@ -37,7 +39,7 @@
                 </select>
             </div>
             <ul class="branch-cards flex-wrap">
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-1-e8e7cac3.png" alt="branch-photo">
                     <h3 class="ft-p1">台北中山旗艦店</h3>
                     <div class="card-content-under">
@@ -57,7 +59,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-2-e9ba0027.png" alt="branch-photo">
                     <h3 class="ft-p1">台北綠園店</h3>
                     <div class="card-content-under">
@@ -76,7 +78,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-3-0f3830b0.png" alt="branch-photo">
                     <h3 class="ft-p1">台中清水旗艦店</h3>
                     <div class="card-content-under">
@@ -95,7 +97,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-4-64d480b6.png" alt="branch-photo">
                     <h3 class="ft-p1">高雄中正形象店</h3>
                     <div class="card-content-under">
@@ -114,7 +116,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-5-6f093e06.png" alt="branch-photo">
                     <h3 class="ft-p1">高雄夢時代店</h3>
                     <div class="card-content-under">
@@ -172,8 +174,32 @@
             </ul>
         </div>
     </div>
-</footer>
-            
-</body>
+</footer>        
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 160, // 顯示間距
+  delay: 100, // 延遲顯示時間,1000 = 1s
+  duration: 800, // 顯示花費時間,1000 = 1s
+  easing: 'ease', // default easing for AOS animations
+  once: false, // 是否只顯示一次,true/false
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script></body>
 
 </html>

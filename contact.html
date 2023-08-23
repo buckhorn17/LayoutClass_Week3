@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />        <title>Glasses - 門市據點</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />        <title>Glasses - 門市據點</title>
   <script type="module" crossorigin src="/LayoutClass_Week3/assets/main-4fec4c29.js"></script>
   <link rel="stylesheet" href="/LayoutClass_Week3/assets/main-693a8cc2.css">
 </head>
@@ -27,8 +29,8 @@
 </div>
 </header>
         <div class="contact container">
-            <h2 class="ft-h2 ft-wb h2-style-line mb33">門市據點</h2>
-            <div class="contact-location flex-sb mb40">
+            <h2 class="ft-h2 ft-wb h2-style-line mb33"  data-aos="fade-right">門市據點</h2>
+            <div class="contact-location flex-sb mb40"  data-aos="fade-right">
                 <p class="ft-p1">選擇地區</p>
                 <select id="myLocation" class="select-branch-option">
                     <option value="">台北中山旗艦店</option>
@@ -39,7 +41,7 @@
                 </select>
             </div>
             <ul class="contact-cards flex-sb flex-wrap">
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/LayoutClass_Week3/assets/store-1-e8e7cac3.png" alt="contact-photo">
                     <div class="card-content-all">
                         <h3 class="ft-p1">台北中山旗艦店</h3>
@@ -61,7 +63,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="map">
+                <li class="map" data-aos="flip-left">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.328816501545!2d121.58768580427379!3d25.060579662640315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1691450312821!5m2!1szh-TW!2stw"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -107,8 +109,32 @@
             </ul>
         </div>
     </div>
-</footer>
-            
-</body>
+</footer>        
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 160, // 顯示間距
+  delay: 100, // 延遲顯示時間,1000 = 1s
+  duration: 800, // 顯示花費時間,1000 = 1s
+  easing: 'ease', // default easing for AOS animations
+  once: false, // 是否只顯示一次,true/false
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script></body>
 
 </html>

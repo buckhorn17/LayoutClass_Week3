@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />    <title>Glasses - 首頁</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    <title>Glasses - 首頁</title>
   <script type="module" crossorigin src="/LayoutClass_Week3/assets/main-4fec4c29.js"></script>
   <link rel="stylesheet" href="/LayoutClass_Week3/assets/main-693a8cc2.css">
 </head>
@@ -27,7 +29,7 @@
 </div>
 </header>
     <div class="banner">
-      <div class="banner-content container">
+      <div class="banner-content container" data-aos="fade-left">
         <h3 class="ft-h3 ft-deepRed">Promise-Desert 2020 早春系列</h3>
         <h1 class="ft-h1 ft-wb ft-deepRed mb4">看得清，才能看得遠</h1>
         <a href="#" class="ft-p2 btn-red">立即購買</a>
@@ -35,7 +37,7 @@
     </div>
 
     <div class="service bg-lightRed">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2 class="ft-h2 ft-deepRed ft-wb mb24 ta-ct">用專業的心，做專業的事</h2>
         <div class="service-cards flex-sb flex-wrap">
           <div class="card">
@@ -62,7 +64,7 @@
       </div>
     </div>
 
-    <div class="series container">
+    <div class="series container" data-aos="fade-up">
       <h2 class="ft-h2 ft-deepRed ft-wb mb48 ta-ct">經典系列鏡框</h2>
       <div class="series-items flex-sb flex-wrap">
         <div class="item">
@@ -81,7 +83,7 @@
     </div>
 
     <div class="joint mb80">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2 class="ft-h2 ft-wb ta-ct mb48">聯名設計鏡框</h2>
         <div class="joint-items flex-sb flex-wrap">
           <div class="item">
@@ -98,9 +100,9 @@
 
     <div class="review mb80">
       <div class="container">
-        <h2 class="ft-h2 ft-wb ft-deepRed ta-ct mb48">顧客推薦</h2>
+        <h2 class="ft-h2 ft-wb ft-deepRed ta-ct mb48" data-aos="flip-left">顧客推薦</h2>
         <div class="review-cards flex-sb flex-wrap">
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="/LayoutClass_Week3/assets/home-section5-1-75717951.png" alt="review-photo">
             <div class="content">
               <div class="content-over">
@@ -110,7 +112,7 @@
               <p class="date ft-p3 ft-grey">2021/06/20</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="/LayoutClass_Week3/assets/home-section5-2-bf28c8b7.png" alt="review-photo">
             <div class="content">
               <div class="content-over">
@@ -120,7 +122,7 @@
               <p class="ft-p3 ft-grey">2021/04/18</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="/LayoutClass_Week3/assets/home-section5-3-978a0702.png" alt="review-photo">
             <div class="content">
               <div class="content-over">
@@ -130,7 +132,7 @@
               <p class="date ft-p3 ft-grey">2020/12/25</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="/LayoutClass_Week3/assets/home-section5-4-cc3480ec.png" alt="review-photo">
             <div class="content">
               <div class="content-over">
@@ -146,7 +148,7 @@
 
 
     <div class="bg-lightRed">
-      <div class="container">
+      <div class="container" data-aos="flip-left">
         <div class="contactUs">
           <h2 class="ft-h2 ft-wb ft-deepRed ta-ct mb48">聯絡我們</h2>
           <p class="ft-p2 mb24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
@@ -206,8 +208,33 @@
             </ul>
         </div>
     </div>
-</footer>
-      
+</footer>    
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 160, // 顯示間距
+  delay: 100, // 延遲顯示時間,1000 = 1s
+  duration: 800, // 顯示花費時間,1000 = 1s
+  easing: 'ease', // default easing for AOS animations
+  once: false, // 是否只顯示一次,true/false
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
 </body>
 
 </html>
