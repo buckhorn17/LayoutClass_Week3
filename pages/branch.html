@@ -14,8 +14,8 @@
     <%- include('./layout/header'); -%>
 
         <div class="branch container">
-            <h2 class="ft-h2 ft-wb h2-style-line mb33">門市據點</h2>
-            <div class="branch-location flex-sb mb40">
+            <h2 class="ft-h2 ft-wb h2-style-line mb33" data-aos="fade-right">門市據點</h2>
+            <div class="branch-location flex-sb mb40" data-aos="fade-right">
                 <p class="ft-p1">選擇地區</p>
                 <select id="myLocation" class="select-branch-option">
                     <option value="">台北市</option>
@@ -24,7 +24,7 @@
                 </select>
             </div>
             <ul class="branch-cards flex-wrap">
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-1.png" alt="branch-photo">
                     <h3 class="ft-p1">台北中山旗艦店</h3>
                     <div class="card-content-under">
@@ -44,7 +44,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-2.png" alt="branch-photo">
                     <h3 class="ft-p1">台北綠園店</h3>
                     <div class="card-content-under">
@@ -63,7 +63,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-3.png" alt="branch-photo">
                     <h3 class="ft-p1">台中清水旗艦店</h3>
                     <div class="card-content-under">
@@ -82,7 +82,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-4.png" alt="branch-photo">
                     <h3 class="ft-p1">高雄中正形象店</h3>
                     <div class="card-content-under">
@@ -101,7 +101,7 @@
                     </div>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-5.png" alt="branch-photo">
                     <h3 class="ft-p1">高雄夢時代店</h3>
                     <div class="card-content-under">
@@ -125,8 +125,7 @@
 
 
         <%- include('./layout/footer'); -%>
-
-            <script type="module" src="../main.js"></script>
+        <%- include('./layout/script'); -%>
 </body>
 
 </html>

@@ -14,8 +14,8 @@
     <%- include('./layout/header'); -%>
 
         <div class="contact container">
-            <h2 class="ft-h2 ft-wb h2-style-line mb33">門市據點</h2>
-            <div class="contact-location flex-sb mb40">
+            <h2 class="ft-h2 ft-wb h2-style-line mb33"  data-aos="fade-right">門市據點</h2>
+            <div class="contact-location flex-sb mb40"  data-aos="fade-right">
                 <p class="ft-p1">選擇地區</p>
                 <select id="myLocation" class="select-branch-option">
                     <option value="">台北中山旗艦店</option>
@@ -26,7 +26,7 @@
                 </select>
             </div>
             <ul class="contact-cards flex-sb flex-wrap">
-                <li class="card">
+                <li class="card" data-aos="flip-left">
                     <img src="/assets/images/store-1.png" alt="contact-photo">
                     <div class="card-content-all">
                         <h3 class="ft-p1">台北中山旗艦店</h3>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="map">
+                <li class="map" data-aos="flip-left">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.328816501545!2d121.58768580427379!3d25.060579662640315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1691450312821!5m2!1szh-TW!2stw"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -60,8 +60,7 @@
 
 
         <%- include('./layout/footer'); -%>
-
-            <script type="module" src="../main.js"></script>
+        <%- include('./layout/script'); -%>
 </body>
 
 </html>
